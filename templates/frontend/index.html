@@ -1,0 +1,18 @@
+{% extends 'frontend/base.html' %}
+{% block title %} Home {% endblock %}
+{% block content %}
+<div class="jumbotron">
+    <style>
+        body {
+            background-color: lightblue;
+          }
+        </style>
+<center><h1 class="display-3">Welcome To Soccer page</h1></center>
+<center><img src="static/images/football01.jpg" height="250" width="300"></center>
+    <hr class="my-2">
+    <p class="lead">
+    <center><a class="btn btn-primary btn-lg" href="{% url 'scores' %}" role="button">Soccer Scores</a></center>
+    </p>
+</body>
+</div>
+{% endblock %}
